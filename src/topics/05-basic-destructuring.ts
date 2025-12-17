@@ -33,7 +33,8 @@ const {
 // console.log(`Cancion: ${song} - Duración: ${duration} - Autor: ${author}`);
 
 // Desestructuración de arreglos
-const [p1, p2, p3 = "Yo"]: string[] = ["Goku", "Vegeta", "Trunks"];
+
+const [p1, p2, p3 = "Yo"]: string[] = ["Goku", "Vegeta", "Trunks"]; // p3 tiene un valor por defecto en caso de que no exista
 
 console.log("Personaje 3: ", p3);
 
