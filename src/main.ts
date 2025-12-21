@@ -6,9 +6,10 @@ import './style.css'
 //import "./topics/04-homework-types"
 //import "./topics/05-basic-destructuring"
 //import "./topics/06-function-destructuring"
+import "./topics/07-import-export"
 
 //import "./exercises/excercise3"
-import "./exercises/destructuring/exercise6"
+// import "./exercises/destructuring/exercise6"
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <p>Hola mundo</p>

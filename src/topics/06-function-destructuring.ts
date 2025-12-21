@@ -1,5 +1,5 @@
 
-interface Product {
+export interface Product {
     description: string;
     price: number;
 }
@@ -14,13 +14,13 @@ const tablet: Product = {
     price: 250.0
 }
 
-interface TaxCalculationOptions {
+export interface TaxCalculationOptions {
     tax: number;
     products: Product[];
 }
 
 //function taxCalculation ( options: TaxCalculationOptions ): [number, number] {
-function taxCalculation ( {tax, products}: TaxCalculationOptions ): [number, number] {
+export function taxCalculation ( {tax, products}: TaxCalculationOptions ): [number, number] {
 
     // const { tax, products } = options // Usar esta desestructuración en caso de que el objeto tenga muchas llaves
     
@@ -34,16 +34,16 @@ function taxCalculation ( {tax, products}: TaxCalculationOptions ): [number, num
 
 }
 
-const shoppingCart: Product[] = [phone, tablet];
-const tax = 0.15;
+// const shoppingCart: Product[] = [phone, tablet];
+/// const tax = 0.15;
 
+/*
 const options: TaxCalculationOptions = {
     tax,
     products: shoppingCart
 };
+*/
 
-const [total, impuestos] = taxCalculation( options );
+// const [total, impuestos] = taxCalculation( options );
 
-console.log(`Total de la venta: ${total} - Impuesto sobre las ventas: ${impuestos}`);
-
-export {};
+// console.log(`Total de la venta: ${total} - Impuesto sobre las ventas: ${impuestos}`);
