@@ -16,7 +16,7 @@ export class Person {
 
     constructor(
         public name: string,
-        private address: string
+        private address: string = "No direction"
     ) {}
 
     showName(): string {
@@ -31,6 +31,7 @@ export class Person {
 const person: Person = new Person("Eduardo", "Juan José Flores");
 console.log(person.showName());
 
+/*
 export class Hero extends Person {
     constructor(
         public alterEgo: string,
@@ -40,6 +41,23 @@ export class Hero extends Person {
         super(realName, "New York");
     }
 }
+*/
 
-const ironman = new Hero("Ironman", 40, "Tony Stark");
+// Uso de la composición
+export class Hero {
+
+    //public person: Person;
+
+    constructor(
+        public alterEgo: string,
+        public age: number,
+        public realName: string,
+        public person: Person,
+    ) {
+        //this.person = new Person(realName);
+    }
+}
+
+const tony = new Person("Tony Stark");
+const ironman = new Hero("Ironman", 40, "Tony", tony);
 console.log(ironman);
