@@ -10,12 +10,13 @@ import './style.css'
 //import "./topics/08-classes"
 //import "./topics/09-generics"
 //import "./topics/10-decorators"
-import "./topics/11-optional-chaining"
+//import "./topics/11-optional-chaining"
 
 //import "./exercises/excercise3"
 // import "./exercises/destructuring/exercise6"
 // import "./exercises/oop/exercise4"
 //import "./exercises/generics/exercise2"
+import "./exercises/chaining/exercise4"
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <p>Hola mundo</p>
