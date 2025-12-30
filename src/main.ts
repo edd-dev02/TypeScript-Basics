@@ -16,7 +16,9 @@ import './style.css'
 // import "./exercises/destructuring/exercise6"
 // import "./exercises/oop/exercise4"
 //import "./exercises/generics/exercise2"
-import "./exercises/chaining/exercise4"
+//import "./exercises/chaining/exercise4"
+
+import "./finalTest/exersice4"
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <p>Hola mundo</p>
